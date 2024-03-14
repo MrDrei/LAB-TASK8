@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UKAY UKAY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(246, 235, 250, 0.702), rgba(218, 15, 15, 0.622));
+            padding-top: 40px; 
+        }
+        .navbar {
+            height: 40px;
+            width: 100%;
+            background-color: #1b1a1c76;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .shop-title {
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+        .shop-title:hover {
+            color: #f8cbff; 
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: none;
+            background-color: #f30101;
+            color: #fff;
+            font-weight: 600;
+            transition: all ease-in-out .3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.28);
+            z-index: 1000;
+        }
+        .close-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 40px rgba(0, 0, 0, 0.28);
+        }
+        .product-container {
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 0 20px;
+        }
+        .product {
+            position: relative;
+            margin-bottom: 2rem;
+            background-color: #ffffffb5; 
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.28);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+        .sale {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(221, 198, 198, 0.766);
+            padding: 5px 10px;
+            border-radius: 6px 0 0 6px;
+            transition: all ease-in-out .3s;
+        }
+        .sale:hover {
+            transform: scale(1.1);
+            border-radius: 6px;
+        }
+        .buy-btn {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            padding: 5px 10px;
+            border-radius: 8px 0 0 8px;
+            background-color: #353536c0; 
+            color: #fff;
+            font-size: 12px;
+            font-weight: 800;
+            border: none;
+            cursor: pointer;
+            transition: all ease-in-out .2s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.28);
+        }
+        .buy-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 50px rgba(49, 47, 50, 0.426);
+        }
+        .add-to-cart {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            border-radius: 0 0 8px 8px;
+            background-color: #353536c0;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 800;
+            border: none;
+            cursor: pointer;
+            transition: all ease-in-out .2s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.28);
+        }
+        .add-to-cart:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 50px rgba(152, 74, 194, 0.629);
+        }
+    </style>
+</head>
+<body>    
+    <nav class="navbar">
+        <h1 class="shop-title">Gent's Wardrobe</h1>
+    </nav>
+    <button class="close-btn">X</button>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="https://happygentleman.com/wp-content/uploads/2020/06/ws22-brown-4.jpg" alt="">
+            <div class="sale"><p>20% OFF</p></div>
+            <button class="add-to-cart">ADD TO CART</button>
+            <button class="buy-btn">BUY</button>
+
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="https://happygentleman.com/wp-content/uploads/2019/11/469-mens-classic-black-3-piece-suit-1.jpg" alt="">
+            <div class="sale"><p>20% OFF</p></div>
+            <button class="add-to-cart">ADD TO CART</button>
+            <button class="buy-btn">BUY</button>
+
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="https://cdn.shopify.com/s/files/1/0118/6706/2330/products/5875-dark_green_a9a64dea-f4e5-4521-9d5b-9fbe31a8efbf_1200x1200.jpg?v=1571788894" alt="">
+            <div class="sale"><p>20% OFF</p></div>
+            <button class="add-to-cart">ADD TO CART</button>
+            <button class="buy-btn">BUY</button>
+
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="https://happygentleman.com/wp-content/uploads/2019/11/mens-black-vintage-1920s-suit.jpg" alt="">
+            <div class="sale"><p>20% OFF</p></div>
+            <button class="add-to-cart">ADD TO CART</button>
+            <button class="buy-btn">BUY</button>
+
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="https://www.fjackets.com/au/product_images/c/586/Peaky_Blinder_Grey_Suit__01168_zoom.jpg " alt="">
+            <div class="sale"><p>20% OFF</p></div>
+            <button class="add-to-cart">ADD TO CART</button>
+            <button class="buy-btn">BUY</button>
+
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="https://happygentleman.com/wp-content/uploads/2019/11/mens-navy-blue-peaky-blinders-wool-suit-1.jpg" alt="">
+            <div class="sale"><p>20% OFF</p></div>
+            <button class="add-to-cart">ADD TO CART</button>
+            <button class="buy-btn">BUY</button>
+
+        </div>
+    </div>
+</body>
+</html>
